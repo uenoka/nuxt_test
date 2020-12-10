@@ -4,6 +4,7 @@
       <div class="text-center">
         <logo />
         <vuetify-logo />
+        <flag iso="it" />
       </div>
       <v-card>
         <v-card-title class="headline">
@@ -77,9 +78,11 @@
 </template>
 
 <script>
+import Vue from 'vue'
+import FlagIcon from 'vue-flag-icon'
 import Logo from '~/components/Logo.vue'
 import VuetifyLogo from '~/components/VuetifyLogo.vue'
-
+Vue.use(FlagIcon)
 export default {
   components: {
     Logo,
